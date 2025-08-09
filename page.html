@@ -1,0 +1,239 @@
+<!-- page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deepak Balmiki — AI Practitioner</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --muted: #94a3b8;
+      --text: #e5e7eb;
+      --accent: #22d3ee;
+      --chip: #1f2937;
+      --border: #1f2937;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 28px;
+      align-items: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    .avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 14px;
+      object-fit: cover;
+      border: 2px solid rgba(255,255,255,.06);
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 34px;
+      letter-spacing: .2px;
+    }
+    .title {
+      color: var(--muted);
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .contact a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(255,255,255,.25);
+    }
+    .cta {
+      margin-top: 14px;
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      background: linear-gradient(135deg, #0891b2, #22d3ee);
+      color: #001017;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+    }
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+      margin-top: 26px;
+    }
+    .card {
+      grid-column: span 12;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    @media (min-width: 900px) {
+      .card.span-7 { grid-column: span 7; }
+      .card.span-5 { grid-column: span 5; }
+    }
+    h2 { margin-top: 0; font-size: 22px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--chip);
+      border: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text);
+    }
+    .item { margin-bottom: 16px; }
+    .item h3 { margin: 0; font-size: 17px; }
+    .sub { color: var(--muted); font-size: 14px; }
+    ul { margin: 8px 0 0 18px; }
+    .footer { text-align: center; color: var(--muted); margin: 40px 0 20px; font-size: 13px; }
+    .accent { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <img class="avatar" src="DeepakBalmiki.jpg" alt="Deepak Balmiki" style="width:200px; height:200px; object-fit:cover; border-radius:14px; border:2px solid rgba(255,255,255,0.1);" />
+      <div>
+        <h1>Deepak Balmiki</h1>
+        <div class="title">AI/ML Consultant · LLM &amp; Generative AI</div>
+        <div class="contact">
+          <strong>Phone:</strong> +44 797 192 5019 &nbsp;•&nbsp;
+          <strong>Email:</strong> <a href="mailto:deepakbalmiki@gmail.com">deepakbalmiki@gmail.com</a>
+        </div>
+        <div class="cta">
+          <a class="btn" href="Deepak Balmiki_Profile.pdf" download>⬇ Download CV (PDF)</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card span-7">
+        <h2>Professional Summary</h2>
+        <p>
+          Artificial Intelligence Consultant and Data Scientist with deep expertise in
+          <span class="accent">Large Language Models</span> and Generative AI.
+          Proven track record architecting and scaling enterprise AI/ML solutions across
+          automotive, healthcare, banking, and supply chain. Experienced integrating Microsoft Copilot,
+          delivering domain-focused prototypes through to production, and leading cross-functional teams.
+        </p>
+        <div class="chips">
+          <span class="chip">LLMs (Claude 3.5, Azure OpenAI)</span>
+          <span class="chip">Python</span>
+          <span class="chip">NLP</span>
+          <span class="chip">TensorFlow · PyTorch · Keras</span>
+          <span class="chip">Azure · AWS · GCP</span>
+          <span class="chip">Databricks</span>
+          <span class="chip">Agile/Scrum</span>
+        </div>
+      </section>
+
+      <section class="card span-5">
+        <h2>Core Skills</h2>
+        <div class="chips">
+          <span class="chip">LLM fine-tuning & deployment</span>
+          <span class="chip">Copilot integration</span>
+          <span class="chip">MLOps & APIs</span>
+          <span class="chip">Data Engineering</span>
+          <span class="chip">Cloud Architecture</span>
+          <span class="chip">Conversational AI</span>
+          <span class="chip">Responsible AI</span>
+        </div>
+      </section>
+
+      <section class="card span-7">
+        <h2>Experience</h2>
+        <div class="item">
+          <h3>Artificial Intelligence Senior Consultant — Wipro Technology</h3>
+          <div class="sub">Dec 2019 — Present</div>
+          <ul>
+            <li>Lead data science teams delivering LLM solutions on AWS and Azure.</li>
+            <li>Designed Python APIs, integrated AWS services, and connected MySQL/DynamoDB.</li>
+            <li>Azure Technical Lead at Philips: Databricks/Spark transformations, ADF pipelines, delta tables.</li>
+            <li>Conversational AI SME at Lloyds Bank: banking chatbots, training data creation, Watson API integration.</li>
+            <li>NHS Scotland: forecasting for Covid-related blood supply and resource availability.</li>
+            <li>Continental: computer vision POC for APEX classification and measurement (VGG-16, Matplotlib).</li>
+            <li>Cardinal Health & Lloyds: AI use-case validation, smart search (Elasticsearch), summarisation, forecasting.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Tech Support Analyst — Wipro HOLMES</h3>
+          <div class="sub">Jan 2018 — Dec 2019</div>
+          <ul>
+            <li>Automated testing for AI products: classifiers, POS/Tabular extraction, image models.</li>
+            <li>Built speech ↔ text modules with Amazon Polly & Lex (Python + Flask).</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Consultant / Senior Software Engineer — Automotive</h3>
+          <div class="sub">Jan 2010 — Dec 2017</div>
+          <ul>
+            <li>Functional consulting and DMS implementations at Mahindra &amp; Mahindra, Force Motors.</li>
+            <li>PL/SQL programming, data migration, and end-to-end delivery.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card span-5">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Ph.D. (In Progress)</strong> — NLP in Large Language Models</li>
+          <li><strong>M.S. Computer Technology (Data Science)</strong> — BITS, India (2019)</li>
+          <li><strong>B.Sc. Mathematics, Physics &amp; Chemistry</strong> — University of Calcutta (2004)</li>
+          <li><strong>Advanced Diploma in Software &amp; IT</strong> — CMC Limited (2001)</li>
+        </ul>
+        <h2 style="margin-top:22px;">Tech Stack</h2>
+        <ul>
+          <li>Python, SQL · scikit-learn, TensorFlow, PyTorch, Keras, NLTK</li>
+          <li>Azure ML, AWS SageMaker · Databricks</li>
+          <li>Oracle, DB2, MySQL, Sybase</li>
+          <li>Agile/Scrum (Scrum Master experience)</li>
+        </ul>
+      </section>
+
+      <section class="card span-12" id="contact">
+        <h2>Contact</h2>
+        <p>
+          Open to consulting, leadership, and advisory roles in AI/ML, Generative AI, and data platforms.
+          Reach me at <a href="mailto:deepakbalmiki@gmail.com">deepakbalmiki@gmail.com</a> or call +44 797 192 5019.
+        </p>
+      </section>
+    </div>
+
+    <div class="footer">
+      © 2025 Deepak Balmiki — Built with a single static HTML file.
+    </div>
+  </div>
+</body>
+</html>
