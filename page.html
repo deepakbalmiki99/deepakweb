@@ -2,238 +2,359 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Deepak Balmiki — AI Practitioner</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak Balmiki - AI/ML Consultant & Data Scientist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --muted: #94a3b8;
-      --text: #e5e7eb;
-      --accent: #22d3ee;
-      --chip: #1f2937;
-      --border: #1f2937;
+    .gradient-bg {
+      background: linear-gradient(135deg, rgb(248, 250, 252) 0%, rgb(239, 246, 255) 100%);
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
-      color: var(--text);
-      line-height: 1.6;
+    .gradient-gray-blue {
+      background: linear-gradient(90deg, rgb(249, 250, 251) 0%, rgb(239, 246, 255) 100%);
     }
-    .container {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .gradient-blue {
+      background: linear-gradient(135deg, rgb(239, 246, 255) 0%, rgb(238, 242, 255) 100%);
     }
-    .hero {
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 28px;
-      align-items: center;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    .gradient-green {
+      background: linear-gradient(135deg, rgb(240, 253, 244) 0%, rgb(209, 250, 229) 100%);
     }
-    .avatar {
-      width: 200px;
-      height: 200px;
-      border-radius: 14px;
-      object-fit: cover;
-      border: 2px solid rgba(255,255,255,.06);
+    .gradient-purple {
+      background: linear-gradient(135deg, rgb(250, 245, 255) 0%, rgb(237, 233, 254) 100%);
     }
-    h1 {
-      margin: 0 0 8px 0;
-      font-size: 34px;
-      letter-spacing: .2px;
-    }
-    .title {
-      color: var(--muted);
-      margin-bottom: 10px;
-      font-weight: 500;
-    }
-    .contact a {
-      color: var(--text);
-      text-decoration: none;
-      border-bottom: 1px dotted rgba(255,255,255,.25);
-    }
-    .cta {
-      margin-top: 14px;
-      display: inline-flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .btn {
-      background: linear-gradient(135deg, #0891b2, #22d3ee);
-      color: #001017;
-      padding: 10px 14px;
-      border-radius: 10px;
-      font-weight: 700;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      border: none;
-    }
-    .btn.secondary {
-      background: transparent;
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 20px;
-      margin-top: 26px;
-    }
-    .card {
-      grid-column: span 12;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 22px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.25);
-    }
-    @media (min-width: 900px) {
-      .card.span-7 { grid-column: span 7; }
-      .card.span-5 { grid-column: span 5; }
-    }
-    h2 { margin-top: 0; font-size: 22px; }
-    .chips { display: flex; flex-wrap: wrap; gap: 10px; }
-    .chip {
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: var(--chip);
-      border: 1px solid var(--border);
-      font-size: 13px;
-      color: var(--text);
-    }
-    .item { margin-bottom: 16px; }
-    .item h3 { margin: 0; font-size: 17px; }
-    .sub { color: var(--muted); font-size: 14px; }
-    ul { margin: 8px 0 0 18px; }
-    .footer { text-align: center; color: var(--muted); margin: 40px 0 20px; font-size: 13px; }
-    .accent { color: var(--accent); }
   </style>
 </head>
-<body>
-  <div class="container">
-    <section class="hero">
-      <img class="avatar" src="DeepakBalmiki.jpg" alt="Deepak Balmiki" style="width:200px; height:200px; object-fit:cover; border-radius:14px; border:2px solid rgba(255,255,255,0.1);" />
-      <div>
-        <h1>Deepak Balmiki</h1>
-        <div class="title">AI/ML Consultant · LLM &amp; Generative AI</div>
-        <div class="contact">
-          <strong>Phone:</strong> +44 797 192 5019 &nbsp;•&nbsp;
-          <strong>Email:</strong> <a href="mailto:deepakbalmiki@gmail.com">deepakbalmiki@gmail.com</a>
-        </div>
-        <div class="cta">
-          <a class="btn" href="Deepak Balmiki_Profile.pdf" download>⬇ Download CV (PDF)</a>
-          <a class="btn secondary" href="#contact">Contact Me</a>
+<body class="min-h-screen">
+  <div class="min-h-screen gradient-bg">
+    <!-- Hero Section -->
+    <section class="relative py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div class="space-y-4">
+              <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                Deepak <span class="text-blue-600">Balmiki</span>
+              </h1>
+              <h2 class="text-2xl lg:text-3xl font-medium text-gray-600">
+                AI/ML Consultant & Data Scientist
+              </h2>
+              <p class="text-lg text-gray-700 leading-relaxed max-w-2xl">
+                Artificial Intelligence Consultant with extensive expertise in Large Language Models (LLMs) 
+                and cutting-edge Generative AI applications. Proven ability to architect, implement, and 
+                scale enterprise-grade AI/ML solutions across diverse industries.
+              </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="mailto:deepakbalmiki@gmail.com"
+                class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                Get In Touch
+              </a>
+              <a 
+                href="tel:+447971925019"
+                class="inline-flex items-center px-6 py-3 border-2 border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-600 hover:text-white transition-colors"
+              >
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                Call Now
+              </a>
+            </div>
+          </div>
+          
+          <div class="flex justify-center lg:justify-end">
+            <div class="relative">
+              <div class="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl ring-8 ring-blue-100">
+                <img 
+                  src="https://cdn.builder.io/api/v1/image/assets%2F80b93ec4d21542e294b8046fba59605d%2Fd060c232482f4fa0899890167695f0e8?format=webp&width=800" 
+                  alt="Deepak Balmiki" 
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="absolute -bottom-4 -right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg">
+                <div class="text-sm font-medium">Currently Pursuing</div>
+                <div class="text-xs opacity-90">Ph.D. in NLP & LLMs</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="grid">
-      <section class="card span-7">
-        <h2>Professional Summary</h2>
-        <p>
-          Artificial Intelligence Consultant and Data Scientist with deep expertise in
-          <span class="accent">Large Language Models</span> and Generative AI.
-          Proven track record architecting and scaling enterprise AI/ML solutions across
-          automotive, healthcare, banking, and supply chain. Experienced integrating Microsoft Copilot,
-          delivering domain-focused prototypes through to production, and leading cross-functional teams.
-        </p>
-        <div class="chips">
-          <span class="chip">LLMs (Claude 3.5, Azure OpenAI)</span>
-          <span class="chip">Python</span>
-          <span class="chip">NLP</span>
-          <span class="chip">TensorFlow · PyTorch · Keras</span>
-          <span class="chip">Azure · AWS · GCP</span>
-          <span class="chip">Databricks</span>
-          <span class="chip">Agile/Scrum</span>
+    <!-- Key Expertise Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Core Expertise</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Specializing in enterprise AI solutions with deep expertise across the full machine learning lifecycle
+          </p>
         </div>
-      </section>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="gradient-blue p-8 rounded-xl shadow-sm border border-blue-100">
+            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Large Language Models</h3>
+            <p class="text-gray-600">
+              Deep expertise in LLM implementation, fine-tuning, and deployment. Specializing in Anthropic Claude 3 Sonnet 3.5 and advanced natural language generation.
+            </p>
+          </div>
 
-      <section class="card span-5">
-        <h2>Core Skills</h2>
-        <div class="chips">
-          <span class="chip">LLM fine-tuning & deployment</span>
-          <span class="chip">Copilot integration</span>
-          <span class="chip">MLOps & APIs</span>
-          <span class="chip">Data Engineering</span>
-          <span class="chip">Cloud Architecture</span>
-          <span class="chip">Conversational AI</span>
-          <span class="chip">Responsible AI</span>
+          <div class="gradient-green p-8 rounded-xl shadow-sm border border-green-100">
+            <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Cloud AI Architecture</h3>
+            <p class="text-gray-600">
+              Expert in AWS, Azure, and GCP ecosystems. Building scalable AI solutions with SageMaker, Azure ML Studio, and cloud-native architectures.
+            </p>
+          </div>
+
+          <div class="gradient-purple p-8 rounded-xl shadow-sm border border-purple-100">
+            <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 7.172V5L8 4z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Enterprise Integration</h3>
+            <p class="text-gray-600">
+              Microsoft Copilot integration, conversational AI for banking, and enterprise-grade AI transformations across automotive, healthcare, and finance sectors.
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="card span-7">
-        <h2>Experience</h2>
-        <div class="item">
-          <h3>Artificial Intelligence Senior Consultant — Wipro Technology</h3>
-          <div class="sub">Dec 2019 — Present</div>
-          <ul>
-            <li>Lead data science teams delivering LLM solutions on AWS and Azure.</li>
-            <li>Designed Python APIs, integrated AWS services, and connected MySQL/DynamoDB.</li>
-            <li>Azure Technical Lead at Philips: Databricks/Spark transformations, ADF pipelines, delta tables.</li>
-            <li>Conversational AI SME at Lloyds Bank: banking chatbots, training data creation, Watson API integration.</li>
-            <li>NHS Scotland: forecasting for Covid-related blood supply and resource availability.</li>
-            <li>Continental: computer vision POC for APEX classification and measurement (VGG-16, Matplotlib).</li>
-            <li>Cardinal Health & Lloyds: AI use-case validation, smart search (Elasticsearch), summarisation, forecasting.</li>
-          </ul>
+    <!-- Experience Highlights -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 gradient-gray-blue">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
+          <p class="text-lg text-gray-600">
+            Delivering AI-driven transformations for global enterprises
+          </p>
         </div>
-        <div class="item">
-          <h3>Tech Support Analyst — Wipro HOLMES</h3>
-          <div class="sub">Jan 2018 — Dec 2019</div>
-          <ul>
-            <li>Automated testing for AI products: classifiers, POS/Tabular extraction, image models.</li>
-            <li>Built speech ↔ text modules with Amazon Polly & Lex (Python + Flask).</li>
-          </ul>
+        
+        <div class="space-y-8">
+          <div class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-blue-600">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">Artificial Intelligence Senior Consultant</h3>
+                <p class="text-lg text-blue-600 font-medium">Wipro Technology</p>
+              </div>
+              <span class="text-gray-500 font-medium">Dec 2019 - Present</span>
+            </div>
+            <div class="space-y-4">
+              <p class="text-gray-700">
+                Leading enterprise AI initiatives across multiple domains, specializing in LLM deployment and cloud-native AI solutions.
+              </p>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                  <h4 class="font-semibold text-gray-900">Key Projects:</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• AWS LLM Architecture with Claude 3 Sonnet</li>
+                    <li>• Azure ML Leadership for Philips</li>
+                    <li>• Conversational AI for Lloyds Bank</li>
+                    <li>• ML Forecasting for NHS Scotland</li>
+                  </ul>
+                </div>
+                <div class="space-y-2">
+                  <h4 class="font-semibold text-gray-900">Technologies:</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• Python, SQL, API Development</li>
+                    <li>• AWS Services, Azure ML Studio</li>
+                    <li>• Databricks, Spark, Delta Tables</li>
+                    <li>• MySQL, DynamoDB</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-8">
+            <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+              <h4 class="text-lg font-bold text-gray-900 mb-3">Notable Client Successes</h4>
+              <div class="space-y-3">
+                <div class="flex items-center space-x-3">
+                  <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <span class="text-gray-700"><strong>Continental AG:</strong> APEX Classification ML System</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <span class="text-gray-700"><strong>NHS UK:</strong> COVID Resource Forecasting</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <div class="w-2 h-2 bg-purple-600 rounded-full"></div>
+                  <span class="text-gray-700"><strong>Cardinal Health:</strong> AI Use Case Validation</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <div class="w-2 h-2 bg-orange-600 rounded-full"></div>
+                  <span class="text-gray-700"><strong>Philips:</strong> Data Pipeline Transformation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+              <h4 class="text-lg font-bold text-gray-900 mb-3">Technical Skills</h4>
+              <div class="space-y-3">
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium text-gray-700">Machine Learning & AI</span>
+                    <span class="text-sm text-gray-500">Expert</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-blue-600 h-2 rounded-full" style="width: 91.666667%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium text-gray-700">Cloud Platforms (AWS/Azure)</span>
+                    <span class="text-sm text-gray-500">Expert</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-green-600 h-2 rounded-full" style="width: 83.333333%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium text-gray-700">Python/SQL Development</span>
+                    <span class="text-sm text-gray-500">Expert</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-purple-600 h-2 rounded-full" style="width: 91.666667%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium text-gray-700">Large Language Models</span>
+                    <span class="text-sm text-gray-500">Expert</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-orange-600 h-2 rounded-full" style="width: 83.333333%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="item">
-          <h3>Consultant / Senior Software Engineer — Automotive</h3>
-          <div class="sub">Jan 2010 — Dec 2017</div>
-          <ul>
-            <li>Functional consulting and DMS implementations at Mahindra &amp; Mahindra, Force Motors.</li>
-            <li>PL/SQL programming, data migration, and end-to-end delivery.</li>
-          </ul>
+      </div>
+    </section>
+
+    <!-- Education & Contact -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Education & Qualifications</h2>
+            <div class="space-y-6">
+              <div class="border-l-4 border-blue-600 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900">Ph.D. (In Progress)</h3>
+                <p class="text-blue-600 font-medium">Natural Language Processing in Large Language Models</p>
+                <p class="text-gray-600 text-sm">Research Focus: Advanced techniques and applications of LLMs in real-world scenarios</p>
+              </div>
+              
+              <div class="border-l-4 border-green-600 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900">Master of Science</h3>
+                <p class="text-green-600 font-medium">Computer Technology – Data Science</p>
+                <p class="text-gray-600 text-sm">Birla Institute of Technology and Science, India — 2019</p>
+              </div>
+              
+              <div class="border-l-4 border-purple-600 pl-6">
+                <h3 class="text-xl font-semibold text-gray-900">Bachelor of Science</h3>
+                <p class="text-purple-600 font-medium">Mathematics, Physics & Chemistry</p>
+                <p class="text-gray-600 text-sm">University of Calcutta, India — 2004</p>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h2>
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Email</p>
+                  <a href="mailto:deepakbalmiki@gmail.com" class="text-blue-600 hover:text-blue-700 transition-colors">
+                    deepakbalmiki@gmail.com
+                  </a>
+                </div>
+              </div>
+              
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Phone</p>
+                  <a href="tel:+447971925019" class="text-green-600 hover:text-green-700 transition-colors">
+                    +44 797 192 5019
+                  </a>
+                </div>
+              </div>
+              
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-medium text-gray-900">Location</p>
+                  <p class="text-gray-600">United Kingdom</p>
+                </div>
+              </div>
+              
+              <div class="pt-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Available for:</h3>
+                <div class="space-y-2">
+                  <div class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mr-2 mb-2">
+                    AI/ML Consulting
+                  </div>
+                  <div class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mr-2 mb-2">
+                    LLM Implementation
+                  </div>
+                  <div class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium mr-2 mb-2">
+                    Enterprise AI Strategy
+                  </div>
+                  <div class="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium mr-2 mb-2">
+                    Cloud AI Architecture
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="card span-5">
-        <h2>Education</h2>
-        <ul>
-          <li><strong>Ph.D. (In Progress)</strong> — NLP in Large Language Models</li>
-          <li><strong>M.S. Computer Technology (Data Science)</strong> — BITS, India (2019)</li>
-          <li><strong>B.Sc. Mathematics, Physics &amp; Chemistry</strong> — University of Calcutta (2004)</li>
-          <li><strong>Advanced Diploma in Software &amp; IT</strong> — CMC Limited (2001)</li>
-        </ul>
-        <h2 style="margin-top:22px;">Tech Stack</h2>
-        <ul>
-          <li>Python, SQL · scikit-learn, TensorFlow, PyTorch, Keras, NLTK</li>
-          <li>Azure ML, AWS SageMaker · Databricks</li>
-          <li>Oracle, DB2, MySQL, Sybase</li>
-          <li>Agile/Scrum (Scrum Master experience)</li>
-        </ul>
-      </section>
-
-      <section class="card span-12" id="contact">
-        <h2>Contact</h2>
-        <p>
-          Open to consulting, leadership, and advisory roles in AI/ML, Generative AI, and data platforms.
-          Reach me at <a href="mailto:deepakbalmiki@gmail.com">deepakbalmiki@gmail.com</a> or call +44 797 192 5019.
-        </p>
-      </section>
-    </div>
-
-    <div class="footer">
-      © 2025 Deepak Balmiki — Built with a single static HTML file.
-    </div>
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center">
+          <p class="text-gray-400">
+            © 2024 Deepak Balmiki. AI/ML Consultant specializing in Large Language Models and Enterprise AI Solutions.
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
